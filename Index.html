@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>人物介紹 - 謝志成 Chea Chiseng</title>
+
+  <style>
+    body {
+      font-family: "Microsoft JhengHei", sans-serif;
+      background: #f5f7fa;
+      margin: 0;
+      padding: 40px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    /* 兩張照片的區塊 */
+    .photo-row {
+      display: flex;
+      gap: 15px;
+      width: 90%;
+      max-width: 650px;
+      margin-bottom: 20px;
+      justify-content: center;
+      flex-wrap: wrap; /* 手機時自動換行 */
+    }
+
+    .photo-row img {
+      width: 48%;
+      max-width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    /* 人物卡片 */
+    .student-card {
+      width: 90%;
+      max-width: 650px;
+      background: #fff;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .student-info h2 {
+      margin: 0 0 10px;
+      color: #222;
+    }
+
+    .student-info p {
+      margin: 6px 0;
+      color: #555;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>人物介紹</h1>
+
+  <!-- 兩張照片 -->
+  <div class="photo-row">
+    <img src="images/chea1.jpg" alt="Chea photo 1">
+    <img src="images/chea2.jpg" alt="Chea photo 2">
+  </div>
+
+  <!-- 人物資訊卡片 -->
+  <div class="student-card">
+    <div class="student-info">
+      <h2>謝志成 / Chea Chiseng</h2>
+      <p>國籍：柬埔寨</p>
+      <p>年齡：24</p>
+      <p>興趣：聽音樂、看電影、學習新課程</p>
+      <p>想體驗：交朋友、學新知</p>
+    </div>
+  </div>
+
+</body>
+</html>
