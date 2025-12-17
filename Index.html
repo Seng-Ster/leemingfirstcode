@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
@@ -6,148 +7,89 @@
   <title>人物介紹 - 謝志成 Chea Chiseng</title>
 
   <style>
-    /* ===== Galaxy Background ===== */
     body {
       font-family: "Microsoft JhengHei", sans-serif;
+      background: #f5f7fa;
       margin: 0;
-      padding: 60px 0;
-      min-height: 100vh;
+      padding: 40px 0;
       display: flex;
       flex-direction: column;
       align-items: center;
-      background:
-        radial-gradient(circle at top, #2b1055, #000 70%),
-        linear-gradient(120deg, #0f2027, #203a43, #2c5364);
-      color: #eee;
-      overflow-x: hidden;
-    }
-
-    /* Floating stars */
-    body::before {
-      content: "";
-      position: fixed;
-      inset: 0;
-      background-image:
-        radial-gradient(2px 2px at 20% 30%, #fff, transparent),
-        radial-gradient(1.5px 1.5px at 70% 60%, #fff, transparent),
-        radial-gradient(1px 1px at 40% 80%, #fff, transparent),
-        radial-gradient(2px 2px at 85% 20%, #fff, transparent);
-      opacity: 0.6;
-      pointer-events: none;
-      animation: twinkle 6s infinite alternate;
-    }
-
-    @keyframes twinkle {
-      from { opacity: 0.3; }
-      to   { opacity: 0.8; }
     }
 
     h1 {
-      font-size: 2.6rem;
-      letter-spacing: 4px;
-      margin-bottom: 30px;
-      color: #e6d9ff;
-      text-shadow: 0 0 12px rgba(200,150,255,0.6);
+      color: #333;
     }
 
-    /* ===== Photos ===== */
     .photo-row {
       display: flex;
-      gap: 18px;
+      gap: 15px;
       width: 90%;
-      max-width: 700px;
-      margin-bottom: 30px;
+      max-width: 650px;
+      margin-bottom: 20px;
       justify-content: center;
       flex-wrap: wrap;
     }
 
     .photo-row img {
       width: 48%;
-      max-width: 320px;
-      height: 210px;
+      max-width: 300px;
+      height: 200px;
       object-fit: cover;
-      border-radius: 18px;
-      box-shadow:
-        0 0 20px rgba(160,100,255,0.4),
-        0 0 40px rgba(100,200,255,0.2);
-      transition: transform 0.4s, box-shadow 0.4s;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
     }
 
-    .photo-row img:hover {
-      transform: scale(1.05) rotate(-1deg);
-      box-shadow:
-        0 0 30px rgba(200,150,255,0.8),
-        0 0 60px rgba(120,220,255,0.5);
-    }
-
-    /* ===== Card ===== */
     .student-card {
       width: 90%;
-      max-width: 700px;
-      background: linear-gradient(160deg,
-        rgba(40,20,70,0.9),
-        rgba(20,10,40,0.9));
-      padding: 30px;
-      border-radius: 24px;
-      box-shadow:
-        0 0 40px rgba(150,100,255,0.4),
-        inset 0 0 20px rgba(255,255,255,0.05);
-      backdrop-filter: blur(10px);
+      max-width: 650px;
+      background: #fff;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     }
 
     .student-info h2 {
-      margin: 0 0 15px;
-      font-size: 1.9rem;
-      color: #f2e9ff;
-      text-shadow: 0 0 10px rgba(180,120,255,0.6);
+      margin: 0 0 10px;
+      color: #222;
     }
 
     .student-info p {
-      margin: 8px 0;
-      color: #d6ccff;
-      letter-spacing: 0.5px;
+      margin: 6px 0;
+      color: #555;
     }
 
-    /* ===== Contact ===== */
     .contact-info {
-      border-top: 1px solid rgba(255,255,255,0.15);
-      margin-top: 20px;
-      padding-top: 20px;
+      border-top: 1px solid #eee;
+      margin-top: 15px;
+      padding-top: 15px;
     }
 
-    /* ===== Social Links ===== */
     .social-links a {
       display: inline-block;
-      margin-right: 18px;
-      margin-top: 10px;
-      padding: 8px 14px;
-      border-radius: 20px;
+      margin-right: 14px;
+      margin-top: 6px;
       text-decoration: none;
+      color: #555;
       font-weight: bold;
-      color: #fff;
-      background: linear-gradient(135deg, #7f5cff, #00d4ff);
-      box-shadow: 0 0 15px rgba(130,90,255,0.6);
-      transition: all 0.35s ease;
     }
 
     .social-links a:hover {
-      transform: translateY(-3px) scale(1.05);
-      box-shadow:
-        0 0 25px rgba(200,150,255,0.9),
-        0 0 50px rgba(80,200,255,0.7);
+      color: #1769ff; /* Behance blue */
     }
   </style>
 </head>
 
 <body>
-
   <h1>人物介紹</h1>
 
+  <!-- Photos -->
   <div class="photo-row">
-    <img src="images/chea1.jpg" alt="Chea Chiseng photo 1">
-    <img src="images/chea2.jpg" alt="Chea Chiseng photo 2">
+    <img src="images/chea1.jpg" alt="Chea photo 1">
+    <img src="images/chea2.jpg" alt="Chea photo 2">
   </div>
 
+  <!-- Profile Card -->
   <div class="student-card">
     <div class="student-info">
       <h2>謝志成 / Chea Chiseng</h2>
@@ -156,19 +98,19 @@
       <p>興趣：聽音樂、看電影、學習新課程</p>
       <p>想體驗：交朋友、學新知</p>
 
+      <!-- Contact Info -->
       <div class="contact-info">
         <p>📍 地址：柬埔寨，暹粒</p>
         <p>📞 電話：+886 966 992 953</p>
         <p>📧 Email：chiseng729@gmail.com</p>
 
+        <!-- Social Links -->
         <div class="social-links">
           <p>🔗 社群：</p>
-
           <a href="https://www.instagram.com/chiseng_chea" target="_blank">
             📸 Instagram
           </a>
-
-          <a href="https://www.behance.net/cheachiseng" target="_blank">
+          <a href="https://www.behance.net/Chea Chiseng" target="_blank">
             🎨 Behance
           </a>
         </div>
