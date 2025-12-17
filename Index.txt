@@ -108,8 +108,8 @@
           <p>🔗 社群：</p>
           <a href="https://www.instagram.com/chiseng_chea" target="_blank">
             📸 Instagram
-          </a>
-          https://www.behance.net/search/users/Chea%20Chiseng
+          
+          behance.net/search/users/Chea%20Chiseng
             🎨 Behance
          
           </a>
